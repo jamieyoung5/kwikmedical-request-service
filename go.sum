@@ -33,6 +33,8 @@ github.com/jamieyoung5/kwikmedical-db-lib v0.2.9/go.mod h1:bGrBsIOznDPjYxWlKhIi8
 github.com/jamieyoung5/kwikmedical-db-lib v0.3.0/go.mod h1:0jtJWQx2VJIVj+8BRmeKPmeGfk+Gt+XhZV1up23XWK8=
 github.com/jamieyoung5/kwikmedical-db-lib v0.3.1 h1:zAi8TT0ZjEpil9Ad5XSCOffDVA6YHK/YgNwwyOoSpVg=
 github.com/jamieyoung5/kwikmedical-db-lib v0.3.1/go.mod h1:0jtJWQx2VJIVj+8BRmeKPmeGfk+Gt+XhZV1up23XWK8=
+github.com/jamieyoung5/kwikmedical-db-lib v0.3.3 h1:IbH/Ew/ktpkKOxoTLm+GEDA9JKavvUzfnCdBGE8BELE=
+github.com/jamieyoung5/kwikmedical-db-lib v0.3.3/go.mod h1:0jtJWQx2VJIVj+8BRmeKPmeGfk+Gt+XhZV1up23XWK8=
 github.com/jamieyoung5/kwikmedical-eventstream v0.2.2 h1:MovA8jV/q+/AB/GbSClpbX/jWbJ9U+jCXEzVmTLqGV4=
 github.com/jamieyoung5/kwikmedical-eventstream v0.2.2/go.mod h1:EbtTl78MD/r9bV8UhyVrWevhxTzkbVl98ymc12e29ao=
 github.com/jamieyoung5/kwikmedical-eventstream v0.2.3 h1:7Pak2t9cKgwrVNytVdBj2hU+s1sx/h1Qs2yhc0y337g=

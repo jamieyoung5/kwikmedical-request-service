@@ -20,7 +20,7 @@ func (h *Handler) processCompleteAmbulanceEvent(event *cloudeventspb.CloudEvent)
 	}
 
 	context := map[string]int{
-		"hospitalId": int(ambulanceRequest.HospitalId),
+		"contextId": int(ambulanceRequest.HospitalId),
 	}
 	contextJsonBytes, err := json.Marshal(context)
 	if err != nil {

@@ -3,7 +3,7 @@ module github.com/jamieyoung5/kwikmedical-request-service
 go 1.23.3
 
 require (
-	github.com/jamieyoung5/kwikmedical-db-lib v0.3.1
+	github.com/jamieyoung5/kwikmedical-db-lib v0.3.3
 	github.com/jamieyoung5/kwikmedical-eventstream v0.2.3
 	go.uber.org/zap v1.27.0
 	google.golang.org/protobuf v1.35.2

@@ -28,7 +28,15 @@ func (h *Handler) processEmergencyEvent(event *cloudeventspb.CloudEvent) error {
 		return err
 	}
 
-	err = h.publishAmbulanceEvent(&emergency, string(emergency.EmergencyCallId), "AmbulanceRequestCreated", nil)
+	hospitalContext := map[string]int{
+		"contextId": int(emergency.HospitalId),
+	}
+	hopsitalContextJsonBytes, err := json.Marshal(hospitalContext)
+	if err != nil {
+		h.logger.Error("error marshalling context", zap.Error(err))
+		return err
+	}
+	err = h.publishAmbulanceEvent(&emergency, string(emergency.EmergencyCallId), "AmbulanceRequestCreated", hopsitalContextJsonBytes)
 	if err != nil {
 		h.logger.Error("Failed to publish AmbulanceRequest", zap.Error(err))
 		return err
@@ -36,7 +44,7 @@ func (h *Handler) processEmergencyEvent(event *cloudeventspb.CloudEvent) error {
 
 	if ambulanceId != nil {
 		context := map[string]int{
-			"ambulanceId": int(*ambulanceId),
+			"contextId": int(*ambulanceId),
 		}
 		contextJsonBytes, marshalErr := json.Marshal(context)
 		if marshalErr != nil {
